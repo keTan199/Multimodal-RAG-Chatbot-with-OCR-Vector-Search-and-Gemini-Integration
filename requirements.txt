@@ -1,0 +1,7 @@
+streamlit
+mistralai
+pinecone-client
+sentence-transformers
+langchain
+pillow
+google-generativeai
