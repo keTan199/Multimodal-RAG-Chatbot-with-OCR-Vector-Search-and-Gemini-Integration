@@ -1,7 +1,6 @@
 streamlit
 mistralai
-pinecone-client
-pinecone>=3.0.0
+pinecone
 sentence-transformers
 langchain
 pillow
