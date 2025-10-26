@@ -8,9 +8,12 @@ from PIL import Image
 from mistralai import Mistral
 from pyairtable import Api
 from sentence_transformers import SentenceTransformer
-from langchain.schema import Document
-from langchain_community.document_loaders import Docx2txtLoader, TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from langchain.schema import Document
+# from langchain_community.document_loaders import Docx2txtLoader, TextLoader
+# from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from langchain_community.document_loaders import Docx2txtLoader, TextLoader, PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from pinecone import Pinecone, ServerlessSpec
 from dotenv import load_dotenv
 import streamlit as st
@@ -178,3 +181,4 @@ def retrieve_conversation_history(
     except Exception as e:
         print(f"Error retrieving from Airtable: {str(e)}")
         return []
+
