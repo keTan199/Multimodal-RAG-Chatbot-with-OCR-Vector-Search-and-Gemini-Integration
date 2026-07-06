@@ -5,7 +5,8 @@ import base64
 import uuid
 import datetime
 from PIL import Image
-from mistralai import Mistral
+#from mistralai import Mistral
+from mistralai.client import Mistral
 from pyairtable import Api
 from sentence_transformers import SentenceTransformer
 # from langchain.schema import Document
