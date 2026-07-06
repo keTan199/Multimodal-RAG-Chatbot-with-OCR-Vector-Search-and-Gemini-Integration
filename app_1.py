@@ -2,7 +2,8 @@ import os
 import base64
 from PIL import Image
 import streamlit as st
-from mistralai import Mistral
+#from mistralai import Mistral
+from mistralai.client import Mistral
 from pinecone import Pinecone, ServerlessSpec
 from sentence_transformers import SentenceTransformer
 from langchain.schema import Document
